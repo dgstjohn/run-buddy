@@ -1,3 +1,11 @@
 body {
+    /* adding font color as hex code */
+    color: #39a6b2;
     font-family: Helvetica, Arial, sans-serif;
+}
+
+header {
+    /* applying styles to <header> tag */
+    padding: 20 px 35 px;
+    background-color: #39a6b2;
 }

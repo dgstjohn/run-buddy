@@ -4,6 +4,12 @@ body {
     font-family: Helvetica, Arial, sans-serif;
 }
 
+header {
+    /* applying styles to <header> tag */
+    padding: 20px 35px;
+    background-color: #39a6b2;
+}
+
 header h1 {
     font-weight: bold;
     font-size: 36px;
@@ -13,11 +19,5 @@ header h1 {
 
 header a {
     color: #fce138;
-}
-
-header {
-    /* applying styles to <header> tag */
-    padding: 20 px 35 px;
-    background-color: #39a6b2;
 }
 

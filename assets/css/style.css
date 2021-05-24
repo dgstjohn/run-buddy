@@ -1,3 +1,5 @@
+/* global styling */
+
 * {
     margin: 0;
     padding: 0;
@@ -10,8 +12,9 @@ body {
     font-family: Helvetica, Arial, sans-serif;
 }
 
+/* styling for the Run Buddy header */
+
 header {
-    /* applying styles to <header> tag */
     padding: 20px 35px;
     background-color: #39a6b2;
 }
@@ -28,6 +31,8 @@ header a {
     color: #fce138;
 }
 
+/* styling for the nav items */
+
 header nav {
     float: right;
     margin: 7px 0;
@@ -42,6 +47,8 @@ header nav ul li a {
     font-weight: lighter;
     font-size: 22px;
 }
+
+/* styling for the footer */
 
 footer {
     background: #fce138;
@@ -75,7 +82,8 @@ section h3 {
     margin: 0;
 }
 
-/* hero style start */
+/* styling for the hero area */
+
 .hero {
     background-image: url("../../images/hero-bg.jpeg");
     height: 600px;
@@ -83,9 +91,9 @@ section h3 {
     background-position: center;
     position: relative;
 }
-/* hero style end */
 
-/* hero form style start */
+/* styling for the hero form */
+
 .hero-form {
     color: #024e76;
     background-color: #fce138;
@@ -96,7 +104,6 @@ section h3 {
     bottom: 120px;
     right: 140px;
 }
-/* hero form style end */
 
 .hero-form p {
     margin: 5px 0 15px 0;
@@ -124,18 +131,10 @@ section h3 {
     margin-bottom: 15px;
 }
 
+/* styling for the What We Do intro */
+
 .intro {
     text-align: center;
-}
-
-.intro h2 {
-    font-size: 55px;
-    color: #024e76;
-    margin-bottom: 35px;
-    padding: 0 100px 20px 100px;
-    border-bottom: 3px solid;
-    border-color: #fce138;
-    display: inline-block;
 }
 
 .intro p {
@@ -145,3 +144,53 @@ section h3 {
     font-size: 20px;
     margin: 0 auto;
 }
+
+/* styling for the What You Do area */
+
+.steps {
+    text-align: center;
+    background-color: #fce138;
+}
+
+.steps div {
+    margin-bottom: 80px;
+}
+
+.steps img {
+    width: 15%;
+    margin: 10px 0;
+}
+
+.steps h3 {
+    color: #024e76;
+    font-size: 46px;
+    margin-top: 10px;
+}
+
+.steps p {
+    color: #39a6b2;
+    font-size: 23px;
+}
+
+.steps span {
+    font-size: 38px;
+}
+
+/* consolidated class styling */
+
+.section-title {
+    font-size: 55px;
+    color: #024e76;
+    margin-bottom: 35px;
+    padding: 0 100px 20px 100px;
+    display: inline-block;
+    border-bottom: 3px solid;
+  }
+  
+  .primary-border {
+    border-color: #fce138;
+  }
+  
+  .secondary-border {
+    border-color: #39a6b2;
+  }

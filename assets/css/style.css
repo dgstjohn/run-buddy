@@ -20,6 +20,12 @@ header {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    position: -webkit-sticky sticky;
+    top: 0;
+    background-image: url("../../images/hero-bg.jpeg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 80%;
 }
 
 header h1 {
@@ -27,6 +33,7 @@ header h1 {
     font-size: 36px;
     color: #fce138;
     margin: 0;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 header a {
@@ -52,7 +59,16 @@ header nav ul li a {
     margin: 10px 15px;
     font-weight: lighter;
     font-size: 1.55vw;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
+/* hover element for the nav elements */
+
+header nav ul li a:hover {
+    background: #fce138;
+    color: #024e76;
+    border-radius: 15px;
+    text-shadow: none;
+  }
 
 /* styling for the footer */
 
@@ -97,8 +113,9 @@ section h3 {
     flex-wrap: wrap;
     background-image: url("../../images/hero-bg.jpeg");
     background-size: cover;
-    background-position: center;
     align-items: flex-start;
+    background-attachment: fixed;
+    background-position: 80%;
 }
 
 .hero-cta {
@@ -114,17 +131,20 @@ section h3 {
     color: #fce138;
     font-style: italic;
     font-size: 55px;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 /* styling for the hero form */
 
 .hero-form {
     color: #024e76;
-    background-color: #fce138;
+    background-color: rgba(252, 225, 56, 0.8);
     padding: 20px;
     border: 3px solid #024e76;
     width: 40%;
     margin: 3.5%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
 }
 
 .hero-form p {
@@ -141,7 +161,14 @@ section h3 {
     font-size: 16px;
     padding: 10px 20px;
     border: 0;
+    border-radius: 10px;
 }
+
+/* hover element for the hero form button */
+
+.hero-form button:hover {
+    background-color: #39a6b2;  
+  }
 
 .form-input {
     color: #024e76;
@@ -151,6 +178,7 @@ section h3 {
     font-size: 16px;
     width: 100%;
     margin-bottom: 15px;
+    border-radius: 10px;
 }
 
 /* styling for the What We Do area */
@@ -321,6 +349,7 @@ section h3 {
     width: 100%;
     margin-bottom: 15px;
     margin-top: 5px;
+    border-radius: 10px;
 }
 
 .contact-form button {
@@ -331,7 +360,15 @@ section h3 {
     text-align: center;
     padding: 15px 0;
     font-size: 16px;
+    border-radius: 10px;
 }
+
+/* hover element for the contact form button */
+
+.contact-form button:hover {
+    color: #fce138;
+    background: #39a6b2;
+  }
 
 /* consolidated class styling */
 
@@ -372,6 +409,7 @@ section h3 {
           /* this will be applied on any screen smaller than 980px */
           padding-bottom: 0;
           justify-content: center;
+          position: relative;
       }
 
       header h1 {

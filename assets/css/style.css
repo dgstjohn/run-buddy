@@ -48,29 +48,13 @@ header nav ul li a {
     font-size: 22px;
 }
 
-/* styling for the footer */
+/* adding hover efx */
 
-footer {
+header nav ul li a:hover {
     background: #fce138;
-    width: 100%;
-    padding: 40px 35px;
-}
-
-footer h2 {
-    display: inline;
     color: #024e76;
-    font-size: 30px;
-    margin: 0;
-}
-
-footer div {
-    float: right;
-    line-height: 1.5;
-    text-align: right;
-}
-
-footer a {
-    color: #024e76;
+    border-radius: 15px;
+    text-shadow: none;
 }
 
 section {
@@ -121,8 +105,14 @@ section h3 {
     border: 0;
 }
 
+.hero-form button:hover {
+    background-color: #39a6b2;
+}
+
 .form-input {
     color: #024e76;
+    /* update existing rule with this declaration */
+    background-color: rgba(255,255,255, 0.75);
     border: 1 px solid #024e76;
     display: block;
     padding: 7px 15 px;
@@ -130,6 +120,11 @@ section h3 {
     width: 100%;
     margin-bottom: 15px;
 }
+
+/* new rule for focus state */
+.form-input:focus {
+    background-color: rgba(255,255,255, 1);
+  }
 
 /* styling for the What We Do intro */
 
@@ -257,6 +252,31 @@ section h3 {
     font-size: 20px;
     font-style: normal;
     margin: 20px 0;
+}
+
+/* styling for the footer */
+
+footer {
+    background: #fce138;
+    width: 100%;
+    padding: 40px 35px;
+}
+
+footer h2 {
+    display: inline;
+    color: #024e76;
+    font-size: 30px;
+    margin: 0;
+}
+
+footer div {
+    float: right;
+    line-height: 1.5;
+    text-align: right;
+}
+
+footer a {
+    color: #024e76;
 }
 
 /* consolidated class styling */

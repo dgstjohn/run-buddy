@@ -70,32 +70,6 @@ header nav ul li a:hover {
     text-shadow: none;
   }
 
-/* styling for the footer */
-
-footer {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    background: #fce138;
-    width: 100%;
-    padding: 40px 35px;
-}
-
-footer h2 {
-    color: #024e76;
-    font-size: 30px;
-    margin: 0;
-}
-
-footer div {
-    line-height: 1.5;
-    text-align: right;
-}
-
-footer a {
-    color: #024e76;
-}
-
 section {
     padding: 60px;
 }
@@ -172,6 +146,7 @@ section h3 {
 
 .form-input {
     color: #024e76;
+    background-color: rgba(255,255,255, 0.75);
     border: 1 px solid #024e76;
     display: block;
     padding: 7px 15 px;
@@ -180,6 +155,12 @@ section h3 {
     margin-bottom: 15px;
     border-radius: 10px;
 }
+
+/* new rule for focus state */
+.form-input:focus {
+    background-color: rgba(255,255,255, 1);
+    outline: none;
+  }
 
 /* styling for the What We Do area */
 
@@ -200,12 +181,15 @@ section h3 {
     margin: 50px auto;
     padding-bottom: 50px;
     width: 80%;
-    border-bottom: 1px solid #39a6b2;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
 }
+
+.step:not(:last-child) {
+    border-bottom: 1px solid #39a6b2;
+  }
 
 /* the h3 gets 30 percent of the flex space */
 
@@ -346,10 +330,17 @@ section h3 {
     padding: 7px 15px;
     font-size: 16px;
     color: #024e76;
+    background-color: rgba(255,255,255, 0.75);
     width: 100%;
     margin-bottom: 15px;
     margin-top: 5px;
     border-radius: 10px;
+}
+
+/* new rule for focus state */
+.contact-form input:focus, .contact-form textarea:focus {
+  background-color: rgba(255,255,255, 1);
+  outline: none;
 }
 
 .contact-form button {
@@ -369,6 +360,32 @@ section h3 {
     color: #fce138;
     background: #39a6b2;
   }
+
+  /* styling for the footer */
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background: #fce138;
+    width: 100%;
+    padding: 40px 35px;
+}
+
+footer h2 {
+    color: #024e76;
+    font-size: 30px;
+    margin: 0;
+}
+
+footer div {
+    line-height: 1.5;
+    text-align: right;
+}
+
+footer a {
+    color: #024e76;
+}
 
 /* consolidated class styling */
 
